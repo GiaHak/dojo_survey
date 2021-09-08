@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Output</title>
+</head>
+<body>
+    <div class="card mx-auto col-6 bg-light text-dark">
+        <h1 class="title">Submitted Info</h1>
+        <p class="text">Name: {{session['name']}}</p>
+        <p class="dropdown">Dojo Location: {{session['location']}}</p>
+        <p class="lang-text">Favorite Language: {{session['language']}}</p>
+        <p class="comment-text">Comments: {{session['comments']}}</p>
+    </div>
+</body>
+</html>

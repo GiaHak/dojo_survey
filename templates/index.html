@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        * {
+            margin: 0 auto;
+            width: 300px;
+        }
+
+        h1 {
+            color: #e8b115
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .submitbtn {
+            background-color: #e8b115
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Dojo Survey</h1>
+
+        <form action="/process" method="POST">
+
+            <div class="form">
+
+                <label for="name">Name:</label>
+                <input type="text" name="name">
+
+            </div>
+            <br>
+            Dojo Location:
+            <div class="form2">
+                <select class="form-select" aria-label="Default select example" name="location">
+                    <!-- <label for="name">Dojo Location:</label> -->
+                    <option selected>Select a Location</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="California">California</option>
+                    <option value="Bellevue">Bellevue</option>
+                    <option value="San Jose">San Jose</option>
+                </select>
+            </div>
+            <br>
+            Favorite Language:
+            <div class="form3">
+                <select class="form-select" aria-label="Default select example" name="language">
+                    <label for="name">Favorite Language:</label>
+                    <option selected>Favorite Language</option>
+                    <option value="Python">Python</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Ruby">Ruby</option>
+                </select>
+            </div>
+            <br>
+            <label for="name">Comments:</label>
+            <input type="text" name="comments" style="height: 200px;">
+            <input class="submitbtn" type="submit" name="Submit" style="width: 80px;">
+        </form>
+    </div>
+</body>
+
+</html>
